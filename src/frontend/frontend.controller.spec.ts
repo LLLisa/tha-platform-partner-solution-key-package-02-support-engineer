@@ -18,39 +18,41 @@ describe('FrontendController', () => {
 
   it('getInsuranceEntities should return the correct insurance entites', () => {
     const assertionObj = [
-        {
-            "value": "1",
-            "label": "United Healthcare"
-        },
-        {
-            "value": "2",
-            "label": "Cigna"
-        },
-        {
-            "value": "3",
-            "label": "BC/BS Empire"
-        }
-    ]
-    expect(controller.getInsuranceOptions()).toStrictEqual(assertionObj)
+      {
+        value: '1',
+        label: 'United Healthcare',
+      },
+      {
+        value: '2',
+        label: 'Cigna',
+      },
+      {
+        value: '3',
+        label: 'BC/BS Empire',
+      },
+      {
+        value: '4',
+        label: 'Aetna',
+      },
+    ];
+    expect(controller.getInsuranceOptions()).toStrictEqual(assertionObj);
   });
 
   it('getServiceOptions should return the correct set of service-options', () => {
     const assertionObj = [
       {
-          "value": "1",
-          "label": "Delayed Reimbusement"
+        value: '1',
+        label: 'Delayed Reimbusement',
       },
       {
-          "value": "2",
-          "label": "Immediate Reimbusement"
+        value: '2',
+        label: 'Immediate Reimbusement',
       },
       {
-          "value": "3",
-          "label": "No Reimbusement"
+        value: '3',
+        label: 'No Reimbusement',
       },
-  ]
-    expect(controller.getServiceOptions()).toStrictEqual(assertionObj)
+    ];
+    expect(controller.getServiceOptions()).toStrictEqual(assertionObj);
   });
-
-  
 });
