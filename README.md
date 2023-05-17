@@ -2,7 +2,7 @@
 
 Welcome to the Float Candidate Assessment, this repository serves as a basis for several different technical assessments involving our nestjs platform development.
 
-You will want to refer to the `docs/` folder for the specific instructions regarding your assessment.  In each assessment brief there are details on the grading rubric and submission process, please read thoroughly.
+You will want to refer to the `docs/` folder for the specific instructions regarding your assessment. In each assessment brief there are details on the grading rubric and submission process, please read thoroughly.
 
 - [02-support-engineer-role](./docs/02-support-engineer-role.md)
 
@@ -18,12 +18,10 @@ Additionally enclosed in this repository is a generated [NestJS](https://nestjs.
 - Added `Coverage` Controller / Service, includes _tests_
 - Added `Frontend` Controller, includes _tests_
 
-
 ### Requirements
 
 - You have nodejs `14.x` or greater running locally with `npm > 5.x`
 - You have a registered Github Account
-
 
 ### Installation
 
@@ -54,17 +52,13 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-
 ### Hit API
 
 ```
+
 curl -d '{"example":"hello world"}'  http://localhost:3000/check_vob
 
 curl http://localhost:3000/frontend/dropdowns/insuranceOptions
 
 curl http://localhost:3000/frontend/dropdowns/serviceOptions
 ```
-
-
-
-
