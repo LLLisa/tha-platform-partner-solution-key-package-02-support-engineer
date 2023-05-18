@@ -22,19 +22,20 @@ describe('AppController (e2e)', () => {
       .expect('Pong!');
   });
 
-
   it('/serviceOptions (GET)', () => {
     return request(app.getHttpServer())
-      .get('/frontend/serviceOptions?exclude=1,2')
+      .get('/frontend/dropdown/serviceOptions?exclude=1,2')
       .expect(200)
-      .expect([{"value":"3","label":"No Reimbusement"}]);
+      .expect([{ value: '3', label: 'No Reimbusement' }]);
   });
 
   it('/check_vob (POST)', () => {
-    return request(app.getHttpServer())
-      .post('/check_vob')
-      .expect(201)
-      //.expect({'is_valid': true});
-      .expect({'status':'OK'});
+    return (
+      request(app.getHttpServer())
+        .post('/check_vob')
+        .expect(201)
+        //.expect({'is_valid': true});
+        .expect({ status: 'OK' })
+    );
   });
 });
